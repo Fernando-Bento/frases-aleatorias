@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+:root{
+    --Fundo: #07191E;
+    --cartão: #093046;
+    --Crayola: #F45B69;
+    --green: #003B36;
+    --Crem: #EAF2EF;
+    --Ligth-green: #9CE37D;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Fundo);
+}
+
+div#rodar{
+    position: relative;
+    top: -40px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #9CE37D;
+    cursor: pointer;
+}
+
+div#rodar > img{
+    transition: transform 1s;
+    width: 65%;
+}
+
+div#rodar > img:hover{
+    transform:rotateZ(360deg);
+}
+
+section{
+    width: 450px;
+    min-height: 300px;
+    border-radius: 50px;
+    background-color: var(--cartão);
+}
+
+article{
+    text-align: center;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 85%;
+}
+article h1{
+    font-size: 2em;
+    font-weight: 200;
+}
+
+article span#triste{
+    color: #5edaff;
+    text-decoration: underline;
+}
+
+article span#grenn{
+    color: #9CE37D;
+}
+
+article h2{
+    margin-top: 40px;
+    font-weight: 100;
+    font-size: 1.4em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article h2::before, h2::after{
+    content: " \" ";
+    color: #F45B69;
+}
